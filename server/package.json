@@ -3,24 +3,29 @@
   "version": "1.0.0",
   "description": "backend for creating apis",
   "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon server.ts",
+    "start": "npx nodemon --exec tsx server.ts",
     "test": "npm test"
   },
   "author": "Shreya",
   "license": "ISC",
   "dependencies": {
+    "@faker-js/faker": "^10.0.0",
     "@types/dotenv": "^8.2.3",
-    "@types/express": "^5.0.3",
-    "@types/node": "^24.5.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "helmet": "^8.1.0",
+    "mongoose": "^8.18.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.2"
   },
   "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^24.6.2",
+    "@types/tsx": "^4.20.6",
     "nodemon": "^3.1.10"
   }
 }
