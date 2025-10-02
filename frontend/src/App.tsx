@@ -2,7 +2,12 @@ import { Grid } from "@mui/material"
 import {Container} from "@mui/material"
 import DFCard from "./components/DFCard"
 import DFChart from "./components/DFChart"
-
+import CFRCard from "./components/CFRCard"
+import CFRChart from "./components/CFRChart"
+import LeadTimeCard from "./components/LeadTimeCard"
+import LeadTimeChart from "./components/LeadTimeChart"
+import MttrCard from "./components/MttrCard"
+import MttrChart from "./components/MttrChart"
 
 function App() {
 
@@ -13,13 +18,13 @@ function App() {
           <DFCard/>
         </Grid>
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <DFCard/>
+          <CFRCard/>
         </Grid>
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <DFCard/>
+          <LeadTimeCard/>
         </Grid>
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <DFCard/>
+          <MttrCard/>
         </Grid>
       </Grid>
       <Grid container spacing={3} alignItems="stretch">
@@ -27,13 +32,13 @@ function App() {
           <DFChart/>
         </Grid>
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <DFChart/>
+          <CFRChart/>
         </Grid>
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <DFChart/>
+          <LeadTimeChart/>
         </Grid>
         <Grid size={{ xs: 12, sm: 6, md: 3 }}>
-          <DFChart/>
+          <MttrChart/>
         </Grid>
       </Grid>
     </Container>
